@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Cadastro</title>
+</head>
+
+<body class="container" id="corpo">
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div class="container-md col-4">
+       
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+        
+    </div>
+
+    <!-- Início do formulário -->
+
+    <form class="" method="POST" action="../controlerPHP/cadastrar.php">
+
+        <div class="container-md col-4 " >
+            
+            <!-- Campo de email com-->
+            <div class="campo" id="">
+                <label for="email"><strong>Nome de Usuario</strong></label>
+                <input class="px-5"  type="text" name="nome" id="nomeUsuario" required>
+            </div>
+        
+
+            <div class="campo">
+                <label for="nome"><strong>nome completo</strong></label>
+                <input class="px-5" type="text" name="nome_completo" id="nomeCompleto" required>
+            </div>
+
+            <div class="campo">
+                <label for="nome"><strong>email</strong></label>
+                <input class="px-5" type="email" name="email" id="Email" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha"><strong>Senha</strong></label>
+                <input class="px-5" type="password" name="senha" id="Senha" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha"><strong>Confirmar Senha</strong></label>
+                <input class="px-5" type="password" name="senha_comfirmar" id="confirmarSenha" required>
+            </div>
+
+            <div class="campo">
+                <label for="nome"><strong>data de nascimento</strong></label>
+                <input class="px-3" type="date" name="date" id="dataNascimento" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Celular</strong></label>
+                <input class="px-5" type="number" name="telefone" id="Celular" required>
+            </div>
+
+            <h2 id="titulo">Endereço</h2>
+            
+            <div class="campo" id="">
+                <label for="email"><strong>Cep</strong></label>
+                <input class="px-5"  type="text" name="cep" id="cep" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Endereço</strong></label>
+                <input class="px-5"  type="text" name="endereco" id="endereco" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Estado</strong></label>
+                <input class="px-5"  type="text" name="estado" id="estado" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Numero</strong></label>
+                <input class="px-5"  type="text" name="numero" id="Numero" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Complemento</strong></label>
+                <input class="px-5"  type="text" name="complemento" id="complemento" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Bairro</strong></label>
+                <input class="px-5"  type="text" name="bairro" id="bairro" required>
+            </div>
+
+            <div class="campo" id="">
+                <label for="email"><strong>Cidade</strong></label>
+                <input class="px-5"  type="text" name="cidade" id="cidade" required>
+            </div>
+        
+
+
+
+
+            <!-- Botão para enviar o formulário -->
+            <button class="btn-group btn-primary" onclick="entrar()">CADASTRAR</button>
+        </div>
+        </div>
+
+    </form>
+
+</body>
+<script src="Javaooooo.js"></script>
+
+</html>
